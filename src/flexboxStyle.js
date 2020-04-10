@@ -30,11 +30,11 @@ export const FlexItem = styled.div`
 
   &:nth-child(3) {
     background: lightblue;
-    flex-basis: 200px;
+    flex: 0 1 200px;
   }
 
   &:nth-child(4) {
     background: lightcoral;
-    min-width: 200px;
+    flex-basis: 200px;
   }
 `;
