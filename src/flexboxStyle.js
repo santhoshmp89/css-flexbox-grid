@@ -4,32 +4,37 @@ export const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
   background: pink;
-  flex-wrap: wrap;
+
+  /* flex-wrap: wrap; */
 `;
 
 export const FlexItem = styled.div`
   background: #eee;
-  min-width: 220px;
-  max-width: 220px;
+  /* flex-basis: 200px; */
+  /* min-width: 200px; */
   height: 100px;
   padding: 20px;
   box-sizing: border-box;
-  flex-grow: 1;
 
   &:nth-child(1) {
     background: red;
+    flex-basis: 100px;
   }
 
   &:nth-child(2) {
     background: green;
     /* flex-shrink: 2; */
+    /* flex-grow: 2; */
+    flex-basis: 300px;
   }
 
   &:nth-child(3) {
     background: lightblue;
+    flex-basis: 200px;
   }
 
   &:nth-child(4) {
     background: lightcoral;
+    min-width: 200px;
   }
 `;
