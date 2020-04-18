@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./Nav";
 import FlexBox from "./FlexBox";
+import FlexboxGrid from "./FlexboxGrid";
+
 import "./styles.css";
 
 export default function App() {
@@ -13,6 +15,7 @@ export default function App() {
         <Switch>
           <Route path="/flexbox" component={FlexBox} />
           <Route path="/grid" render={() => <h2>Grid</h2>} />
+          <Route path="flexbox-grid" render={FlexboxGrid} />
         </Switch>
       </div>
     </Router>

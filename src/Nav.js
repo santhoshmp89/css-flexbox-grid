@@ -6,6 +6,7 @@ export default function App() {
   return (
     <>
       <Link to="/flexbox">Flexbox</Link> <br />
+      <Link to="/flexbox-grid">Flexbox Grid</Link> <br />
       <Link to="/grid">Grid</Link>
     </>
   );
