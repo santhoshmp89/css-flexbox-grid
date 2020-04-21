@@ -15,7 +15,7 @@ export default function App() {
         <Switch>
           <Route path="/flexbox" component={FlexBox} />
           <Route path="/grid" render={() => <h2>Grid</h2>} />
-          <Route path="flexbox-grid" render={FlexboxGrid} />
+          <Route path="/flexbox-grid" render={FlexboxGrid} />
         </Switch>
       </div>
     </Router>
