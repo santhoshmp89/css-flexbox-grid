@@ -9,7 +9,7 @@ export const GridContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   /* grid-auto-rows: minmax(100px, auto); */
   /* grid-template-rows: repeat(4, 200px) */
-  grid-template-rows: repeat(3, minmax(200px, auto));
+  grid-template-rows: [row-first] 30% [row2-sec] 30% [row3-thr] 30%;
   grid-gap: 10px;
 `;
 
