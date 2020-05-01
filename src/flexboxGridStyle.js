@@ -11,6 +11,6 @@ export const FlexGridItem = styled.div`
   margin: 10px;
   background: #000;
   color: #fff;
-  flex: 0 1 20%;
+  flex: 1 1 20%;
   box-sizing: border-box;
 `;
