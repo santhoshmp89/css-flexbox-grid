@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import FlexBox from "./FlexBox";
 import FlexboxGrid from "./FlexboxGrid";
 import Grid from "./Grid";
+import GridLayoutApp from "./GridLayout";
 
 import "./styles.css";
 
@@ -15,8 +16,19 @@ export default function App() {
         <Nav />
         <Switch>
           <Route path="/flexbox" component={FlexBox} />
-          <Route path="/grid" component={Grid} />
           <Route path="/flexbox-grid" render={FlexboxGrid} />
+          <Route
+            path="/grid"
+            render={props => (
+              <>
+                <Route path={`${props.match.url}/`} component={Grid} exact />
+                <Route
+                  path={`${props.match.url}/grid-layout`}
+                  component={GridLayoutApp}
+                />
+              </>
+            )}
+          />
         </Switch>
       </div>
     </Router>

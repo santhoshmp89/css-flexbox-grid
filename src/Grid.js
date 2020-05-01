@@ -1,12 +1,17 @@
 import React from "react";
 import { GridContainer, GridItem } from "./gridStyles";
+import { Link, withRouter } from "react-router-dom";
 
-export default class Grid extends React.Component {
+class Grid extends React.Component {
   render() {
     return (
       <>
         <h2>Grid</h2>
         <hr />
+        <Link to={`${this.props.location.pathname}/grid-layout`}>
+          Grid Layout
+        </Link>
+        <br />
         <br />
 
         <GridContainer>
@@ -29,3 +34,5 @@ export default class Grid extends React.Component {
     );
   }
 }
+
+export default withRouter(Grid);
